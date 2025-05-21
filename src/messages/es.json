@@ -1,0 +1,42 @@
+{
+  "app": {
+    "title": "Portafolio",
+    "description": "Mi sitio web de portafolio personal"
+  },
+  "common": {
+    "theme": {
+      "toggle": "Cambiar tema",
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema"
+    },
+    "language": {
+      "toggle": "Cambiar idioma",
+      "en": "Inglés",
+      "es": "Español"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Portafolio en Next.js",
+      "description": "Un sitio de portafolio con Next.js, Tailwind CSS, shadcn/ui, temas e i18n.",
+      "viewProjects": "Ver Proyectos",
+      "contactMe": "Contáctame"
+    },
+    "projects": {
+      "title": "Proyectos",
+      "projectTitle": "Proyecto {number}",
+      "description": "Esta es una descripción de muestra del proyecto. Reemplaza con los detalles reales de tu proyecto."
+    },
+    "contact": {
+      "title": "Contáctame",
+      "description": "No dudes en contactarme para colaboraciones o consultas.",
+      "email": "Correo",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    },
+    "footer": {
+      "copyright": "© {year} Portafolio. Construido con Next.js, Tailwind y shadcn/ui."
+    }
+  }
+} 

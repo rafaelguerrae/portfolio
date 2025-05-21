@@ -1,0 +1,42 @@
+{
+  "app": {
+    "title": "Portfolio",
+    "description": "My personal portfolio website"
+  },
+  "common": {
+    "theme": {
+      "toggle": "Toggle theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "language": {
+      "toggle": "Change language",
+      "en": "English",
+      "es": "Spanish"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Next.js Portfolio",
+      "description": "A portfolio site with Next.js, Tailwind CSS, shadcn/ui, theming, and i18n support.",
+      "viewProjects": "View Projects",
+      "contactMe": "Contact Me"
+    },
+    "projects": {
+      "title": "Projects",
+      "projectTitle": "Project {number}",
+      "description": "This is a sample project description. Replace with your actual project details."
+    },
+    "contact": {
+      "title": "Contact Me",
+      "description": "Feel free to reach out to me for collaborations or inquiries.",
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    },
+    "footer": {
+      "copyright": "© {year} Portfolio. Built with Next.js, Tailwind and shadcn/ui."
+    }
+  }
+} 
