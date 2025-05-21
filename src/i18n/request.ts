@@ -11,8 +11,9 @@ const messages = {
 };
 
 export default getRequestConfig(async ({ locale }) => {
-  // Make sure to validate the locale
-  const validLocale = locales.includes(locale) ? locale : defaultLocale;
+  // Make sure to validate the locale and provide a default if it's undefined
+  const safeLocale = locale || defaultLocale;
+  const validLocale = locales.includes(safeLocale) ? safeLocale : defaultLocale;
   
   return {
     locale: validLocale,

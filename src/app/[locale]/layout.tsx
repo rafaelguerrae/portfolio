@@ -26,14 +26,15 @@ const geistMono = Geist_Mono({
 });
 
 type Props = {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
 export async function generateMetadata(
-  { params }: Props
+  { params }: { params: Promise<{ locale: string }> }
 ): Promise<Metadata> {
-  // Use the locale safely
-  const locale = params?.locale || 'en';
+  // Await the params promise
+  const resolvedParams = await params;
+  const locale = resolvedParams?.locale || 'en';
   const t = await getTranslations({ locale, namespace: "app" });
   
   return {
@@ -51,10 +52,11 @@ export default async function RootLayout({
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }>) {
-  // Use the locale safely
-  const locale = params?.locale || 'en';
+  // Await the params promise
+  const resolvedParams = await params;
+  const locale = resolvedParams?.locale || 'en';
 
   // Use statically imported messages
   const selectedMessages = messages[locale as keyof typeof messages] || messages.en;
