@@ -16,17 +16,28 @@
       "es": "Español"
     }
   },
+  "sidebar": {
+    "name": "Rafael Guerra",
+    "role": "Desarrollador de Software",
+    "workplace": "Minipa do Brasil",
+    "workplaceRole": "Practicante de Desarrollo de Software",
+    "education": "UFABC - Universidad Federal del ABC",
+    "course": "Ciencias de la Computación",
+    "email": "Correo",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
   "home": {
     "hero": {
       "title": "Portafolio en Next.js",
-      "description": "Un sitio de portafolio con Next.js, Tailwind CSS, shadcn/ui, temas e i18n.",
+      "description": "Un sitio de portafolio con Next.js, Tailwind CSS, shadcn/ui, temas e internacionalización.",
       "viewProjects": "Ver Proyectos",
       "contactMe": "Contáctame"
     },
     "projects": {
       "title": "Proyectos",
       "projectTitle": "Proyecto {number}",
-      "description": "Esta es una descripción de muestra del proyecto. Reemplaza con los detalles reales de tu proyecto."
+      "description": "Esta es una descripción de muestra del proyecto. Reemplazar con los detalles reales de tu proyecto."
     },
     "contact": {
       "title": "Contáctame",
@@ -36,7 +47,7 @@
       "github": "GitHub"
     },
     "footer": {
-      "copyright": "© {year} Portafolio. Construido con Next.js, Tailwind y shadcn/ui."
+      "copyright": "© {year} Rafael Guerra. Todos los derechos reservados."
     }
   }
-} 
+}

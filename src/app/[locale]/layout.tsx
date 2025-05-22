@@ -1,47 +1,26 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { locales } from "@/i18n/request";
-import { getTranslations } from "next-intl/server";
 
 import { ThemeProvider } from "@/components/theme-provider";
 import "../globals.css";
 
 import enMessages from '@/messages/en.json';
 import esMessages from '@/messages/es.json';
+import { Inter } from "next/font/google";
 
 const messages = {
   en: enMessages,
   es: esMessages
 };
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
-
-export async function generateMetadata(
-  { params }: { params: Promise<{ locale: string }> }
-): Promise<Metadata> {
-  // Await the params promise
-  const resolvedParams = await params;
-  const locale = resolvedParams?.locale || 'en';
-  const t = await getTranslations({ locale, namespace: "app" });
-  
-  return {
-    title: t("title"),
-    description: t("description"),
-  };
-}
 
 export function generateStaticParams() {
   return locales.map(locale => ({ locale }));
@@ -64,12 +43,13 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} antialiased`}
+        cz-shortcut-listen="true"
       >
         <NextIntlClientProvider locale={locale} messages={selectedMessages}>
           <ThemeProvider
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="light"
             enableSystem
             disableTransitionOnChange
           >

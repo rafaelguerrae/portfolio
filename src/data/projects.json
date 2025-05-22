@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "TeamSync",
+    "description": "Details",
+    "image": "/teamsync.png",
+    "tags": ["Next.js", "TypeScript", "Shadcn", "NestJS", "Tailwind"],
+    "githubUrl": "https://github.com/rafaelguerrae/teamsync",
+    "liveUrl": "https://team-sync-alpha.vercel.app/"
+  },
+  {
+    "id": 2,
+    "title": "TaskSync",
+    "description": "Details",
+    "image": "/tasksync.png",
+    "tags": ["Kotlin", "Jetpack Compose", "Firebase"],
+    "githubUrl": "https://github.com/rafaelguerrae/task-sync",
+    "liveUrl": ""
+  }
+]

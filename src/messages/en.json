@@ -16,6 +16,17 @@
       "es": "Spanish"
     }
   },
+  "sidebar": {
+    "name": "Rafael Guerra",
+    "role": "Software Developer",
+    "workplace": "Minipa do Brasil",
+    "workplaceRole": "Software Developer Intern",
+    "education": "UFABC - Federal University of ABC",
+    "course": "Computer Science",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
   "home": {
     "hero": {
       "title": "Next.js Portfolio",
@@ -36,7 +47,7 @@
       "github": "GitHub"
     },
     "footer": {
-      "copyright": "© {year} Portfolio. Built with Next.js, Tailwind and shadcn/ui."
+      "copyright": "© {year} Rafael Guerra. All rights reserved."
     }
   }
-} 
+}
